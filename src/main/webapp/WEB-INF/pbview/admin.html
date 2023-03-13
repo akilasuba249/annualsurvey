@@ -1,0 +1,685 @@
+<%@ page language="java" contentType="text/html;" charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Group Hr Annual Survey</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/scrolling-nav.css" rel="stylesheet">
+<link rel="stylesheet" href="css/common.css"/>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!--header-->
+<div class="fxtop">
+  <div class="col-md-4 col-xs-4 col-sm-4"> <img src="images/logo.png" class="logo" /> </div>
+  <div class="col-md-4 col-xs-4 col-sm-4">
+    <h1>Group HR Annual Survey</h1>
+  </div>
+  <div class="col-md-4 col-xs-4 col-sm-4">
+    <select class="pull-right opt">
+      <option>Welcome</option>
+    </select>
+    <h5 class="pull-right wlcm">Sanjay Chavan</h5>
+  </div>
+</div>
+<!--header end--> 
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <!-- Hidden li included to remove active class from about link when scrolled up past about section --> 
+        <!-- <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>-->
+        <li> <a class="page-scroll" href="#Home">Home</a> </li>
+        <li> <a class="page-scroll" href="#Year">Year</a> </li>
+        <li> <a class="page-scroll" href="#Area">Area</a> </li>
+        <li> <a class="page-scroll" href="#Employee">Employee</a> </li>
+        <li> <a class="page-scroll" href="#Question">Question</a> </li>
+        <li> <a class="page-scroll" href="#Dashboard">Dashboard</a> </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container --> 
+</nav>
+
+<!--
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Scrolling Nav</h1>
+                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
+                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+                </div>
+            </div>
+        </div>
+    </section>--> 
+
+<!-- Home-section -->
+<section id="Home" class="Home-section">
+  <div class="container">
+    <div class="row">
+      <h1>This is Home Area</h1>
+      
+      <!--All pop-up start-->
+      <div class="col-lg-12"> 
+        <!-- Add area popup start -->
+        <div class="md-modal md-effect-4 w5" id="modal-4">
+          <div class="md-content">
+            <h3>Modal Dialog</h3>
+            <div>
+              <div class="modal-body">
+                <form class="form-group">
+                  <label class="col-md-3">Select Area</label>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control feld"/>
+                  </div>
+                </form>
+                <div class="clearfix"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn addbtn glyphicon glyphicon-circle-arrow-right" data-dismiss="modal">Submit</button>
+                <button class="md-close btn btn-default addbtn glyphicon glyphicon-remove-circle">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add area popup end --> 
+        <!-- Add Employee popup start -->
+        <div class="md-modal md-effect-5" id="modal-5">
+          <div class="md-content">
+            <h3><img src="images/add.png" style="margin-right: 10px;"/>Add Employee</h3>
+            <div class="modal-body">
+              <div class="form-group">
+                <label class="col-md-2 nopad">Token ID :</label>
+                <div class="col-md-4">
+                  <input type="text" class="form-control feld"/>
+                </div>
+                <label class="col-md-2 nopad">Year :</label>
+                <div class="col-md-4">
+                  <input type="text" class="form-control feld"/>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-group">
+                <label class="col-md-2 nopad">First Name :</label>
+                <div class="col-md-4">
+                  <input type="text" class="form-control feld"/>
+                </div>
+                <label class="col-md-2 nopad">Last Name :</label>
+                <div class="col-md-4">
+                  <input type="text" class="form-control feld"/>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-group">
+                <label class="col-md-2 nopad">Email ID :</label>
+                <div class="col-md-4">
+                  <input type="text" class="form-control feld"/>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <label class="col-md-2 nopad">Select Area:</label>
+              <div class="col-md-9">
+                <div class="col-md-1">
+                  <input type="checkbox">
+                </div>
+                <label class="col-md-3">MLU</label>
+                <div class="col-md-1">
+                  <input type="checkbox">
+                </div>
+                <label class="col-md-3">Ascend</label>
+                <div class="col-md-1">
+                  <input type="checkbox">
+                </div>
+                <label class="col-md-3">GMC</label>
+                <div class="clearfix"></div>
+                <div class="col-md-1">
+                  <input type="checkbox">
+                </div>
+                <label class="col-md-3">RC</label>
+                <div class="col-md-1">
+                  <input type="checkbox">
+                </div>
+                <label class="col-md-3">Rise(GEB)</label>
+                <div class="col-md-1">
+                  <input type="checkbox">
+                </div>
+                <label class="col-md-3">MPGM</label>
+                <div class="clearfix"></div>
+                <div class="col-md-1">
+                  <input type="checkbox">
+                </div>
+                <label class="col-md-3">MCARES(HR)</label>
+                <div class="col-md-1">
+                  <input type="checkbox">
+                </div>
+                <label class="col-md-3">MPGM(HR)</label>
+                <div class="col-md-1">
+                  <input type="checkbox">
+                </div>
+                <label class="col-md-3">C&b</label>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn addbtn glyphicon glyphicon-circle-arrow-right" data-dismiss="modal">Submit</button>
+                <button class="md-close btn btn-default addbtn glyphicon glyphicon-remove-circle">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Employee popup end --> 
+        <!-- Add Delet entry popup start -->
+        <div class="md-modal md-effect-8" id="modal-8">
+          <div class="md-content">
+            <h3>Delete this entry</h3>
+            <div>
+              <div class="modal-body">
+                <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Are you sure you want to delete this Record?</div>
+              </div>
+              <div class="modal-footer ">
+                <button type="button" class="btn addbtn" ><span class="glyphicon glyphicon-ok-sign"></span> Yes</button>
+                <button type="button" class="md-close btn addbtn" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> No</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Delete entry popup end --> 
+        <!-- Edit entry popup start -->
+        <div class="md-modal md-effect-13" id="modal-13">
+          <div class="md-content">
+            <h3> Edit Your Detail</h3>
+            <div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <input class="form-control " type="text" placeholder="Open ended">
+                </div>
+                <div class="form-group">
+                  <input class="form-control " type="text" placeholder="I feel that i am contributing to the overall version of my company">
+                </div>
+                <div class="form-group">
+                  <textarea rows="2" class="form-control" placeholder="MLU"></textarea>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="md-close btn addbtn btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> Update</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Edit entry popup end --> 
+        <!-- Add Question popup start -->
+        <div class="md-modal md-effect-18" id="modal-18">
+          <div class="md-content">
+            <h3> <img src="images/add.png" style="margin-right: 10px;"/>Add Question</h3>
+            <div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label class="col-md-2 nopad">Token ID :</label>
+                  <div class="col-md-4">
+                    <input type="text" class="form-control feld"/>
+                  </div>
+                  <label class="col-md-2 nopad">Year :</label>
+                  <div class="col-md-4">
+                    <input type="text" class="form-control feld"/>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="form-group">
+                  <label class="col-md-2 nopad">First Name :</label>
+                  <div class="col-md-4">
+                    <input type="text" class="form-control feld"/>
+                  </div>
+                  <label class="col-md-2 nopad">Last Name :</label>
+                  <div class="col-md-4">
+                    <input type="text" class="form-control feld"/>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn addbtn glyphicon glyphicon-circle-arrow-right" data-dismiss="modal">Submit</button>
+                <button class="md-close btn btn-default addbtn glyphicon glyphicon-remove-circle">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Question popup end --> 
+        
+        <!-- /container -->
+        <div class="md-overlay"></div>
+        <!-- the overlay element --> 
+      </div>
+      <!--all pop-up end--> 
+    </div>
+  </div>
+</section>
+<!-- Home-section end --> 
+
+<!-- Year Section -->
+<section id="Year" class="Year-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Services Section</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Year Section End --> 
+
+<!-- Area Section -->
+<section id="Area" class="Area-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="centerdata">
+          <label class="col-md-3 col-xs-3 col-sm-3  nopad">Select Year</label>
+          <div class="col-md-3 col-xs-3 col-sm-3">
+            <select class="form-control feld">
+              <option>2015</option>
+              <option>2016</option>
+            </select>
+          </div>
+          <div class="col-md-3 col-md-offset-3 nopad">
+            <div class="addbtn btn btn-default pull-right md-trigger" data-modal="modal-4"><img src="images/add.png" style="margin-right: 10px;"/>Add Area</div>
+          </div>
+          <div class="clearfix"></div>
+          <!-- area grid start-->
+          <table class="table table-condensed table-striped table-hover marg30">
+            <tbody>
+              <tr class="tbrder">
+                <td class="biglable">1.Mahindra Leadership University</td>
+                <td class="smalllable"><div class="switch pull-right">
+                    <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                    <label for="cmn-toggle-1"></label>
+                  </div></td>
+              </tr>
+              <tr class="tbrder">
+                <td class="biglable">2. RC</td>
+                <td class="smalllable"><div class="switch pull-right">
+                    <input id="cmn-toggle-2" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                    <label for="cmn-toggle-2"></label>
+                  </div></td>
+              </tr>
+              <tr class="tbrder">
+                <td class="biglable">3.GRMP-Participants</td>
+                <td class="smalllable"><div class="switch pull-right">
+                    <input id="cmn-toggle-3" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                    <label for="cmn-toggle-3"></label>
+                  </div></td>
+              </tr>
+              <tr class="tbrder">
+                <td class="biglable">4.GPMD- HR Heads/CEOs/Mentors</td>
+                <td class="smalllable"><div class="switch pull-right">
+                    <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                    <label for="cmn-toggle-4"></label>
+                  </div></td>
+              </tr>
+              <tr class="tbrder">
+                <td class="biglable">5.Ascend</td>
+                <td class="smalllable"><div class="switch pull-right">
+                    <input id="cmn-toggle-5" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                    <label for="cmn-toggle-5"></label>
+                  </div></td>
+              </tr>
+              <tr class="tbrder">
+                <td class="biglable">6.CFO+Track Program</td>
+                <td class="smalllable"><div class="switch pull-right">
+                    <input id="cmn-toggle-6" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                    <label for="cmn-toggle-6"></label>
+                  </div></td>
+              </tr>
+              <tr class="tbrder">
+                <td class="biglable">7.MLU Academies</td>
+                <td class="smalllable"><div class="switch pull-right">
+                    <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                    <label for="cmn-toggle-7"></label>
+                  </div></td>
+              </tr>
+              <tr class="tbrder">
+                <td class="biglable">8.Rise(GEB)</td>
+                <td class="smalllable"><div class="switch pull-right">
+                    <input id="cmn-toggle-8" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                    <label for="cmn-toggle-8"></label>
+                  </div></td>
+              </tr>
+              <tr class="tbrder">
+                <td class="biglable">9.Rise(TWC)</td>
+                <td class="smalllable"><div class="switch pull-right">
+                    <input id="cmn-toggle-9" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                    <label for="cmn-toggle-9"></label>
+                  </div></td>
+              </tr>
+              <tr class="tbrder">
+                <td class="biglable">10.Mcares(Workmen)</td>
+                <td class="smalllable"><div class="switch pull-right">
+                    <input id="cmn-toggle-10" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                    <label for="cmn-toggle-10"></label>
+                  </div></td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- area grid end-->
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- Area Section end-->
+<div class="clearfix"></div>
+<!-- Employee Section -->
+<section id="Employee" class="Employee-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <label class="col-md-1 col-sm-2 nopad">Select Year</label>
+        <div class="col-md-2 col-sm-4">
+          <select class="form-control feld">
+            <option>2015</option>
+            <option>2016</option>
+          </select>
+        </div>
+        <label class="col-md-1 col-sm-2 nopad">Area</label>
+        <div class="col-md-2 col-sm-4 smpad">
+          <select class="form-control feld">
+            <option>All</option>
+            <option>2016</option>
+          </select>
+        </div>
+        <div class="col-md-3 col-md-offset-3 col-sm-12 nopad">
+          <div type="file" class="addbtn btn btn-default pull-left hand"> <img src="images/upload.png" style="margin-right: 10px;"/>Upload
+            <input type="file">
+          </div>
+          <div class="addbtn btn btn-default pull-right md-trigger" data-modal="modal-5"> <img src="images/add.png" style="margin-right: 10px;"/>Add Employee </div>
+        </div>
+        <div class="clearfix"></div>
+        <!--Employee grid data-->
+        <div class="table-responsive marg30">
+          <table class="table table-condensed table-striped table-bordered table-hover no-margin">
+            <thead>
+              <tr>
+                <th style="width:15%" class="bg">Token ID</th>
+                <th style="width:25%" class="hidden-phone bg">Employee Name</th>
+                <th style="width:40%" class="hidden-phone bg">Email id</th>
+                <th style="width:5%" class="hidden-phone bg">Area</th>
+                <th style="width:15%" class="hidden-phone bg text-center">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2107726</td>
+                <td class="hidden-phone">Ajay Undale</td>
+                <td class="hidden-phone">ajay.undale@mahindra.com</td>
+                <td class="hidden-phone dropdown"><div class="serch hand dropdown-toggle" id="menu1" data-toggle="dropdown"></div>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                    <li>
+                      <div class="col-md-1 col-sm-1">
+                        <input type="checkbox">
+                      </div>
+                      <label class="col-md-3 col-sm-3">MLU</label>
+                      <div class="col-md-1 col-sm-1">
+                        <input type="checkbox">
+                      </div>
+                      <label class="col-md-6 col-sm-6">MPGM HR</label>
+                      <div class="col-md-1 col-sm-1">
+                        <input type="checkbox">
+                      </div>
+                      <label class="col-md-3 col-sm-3">RC</label>
+                      <div class="col-md-1 col-sm-1">
+                        <input type="checkbox">
+                      </div>
+                      <label class="col-md-6 col-sm-6">Ascend</label>
+                      <div class="col-md-1 col-sm-1">
+                        <input type="checkbox">
+                      </div>
+                      <label class="col-md-3 col-sm-3">MPGM</label>
+                      <div class="col-md-1 col-sm-1">
+                        <input type="checkbox">
+                      </div>
+                      <label class="col-md-6 col-sm-6">Rise(GEB)</label>
+                    </li>
+                  </ul></td>
+                <td class="hidden-phone col-md-12"><div class="edit md-trigger col-md-6 col-sm-6 hand" data-modal="modal-13"></div>
+                  <div class="delete col-md-6 col-sm-6 md-trigger hand" data-modal="modal-8"> </div></td>
+              </tr>
+              <tr>
+                <td>2107726</td>
+                <td class="hidden-phone">Sarvan Kumar</td>
+                <td class="hidden-phone">SarvanKumar@mahindra.com</td>
+                <td class="hidden-phone"><div class="serch hand"></div></td>
+                <td class="hidden-phone col-md-12"><div class="edit md-trigger col-md-6 col-sm-6 hand" data-modal="modal-13"></div>
+                  <div class="delete col-md-6 col-sm-6 md-trigger hand" data-modal="modal-8"> </div></td>
+              </tr>
+              <tr>
+                <td><span class="name">2107726</span></td>
+                <td class="hidden-phone">Yash Mahale</td>
+                <td class="hidden-phone">YashMahale@mahindra.com</td>
+                <td class="hidden-phone"><div class="serch hand"></div></td>
+                <td class="hidden-phone col-md-12"><div class="edit md-trigger col-md-6 col-sm-6 hand" data-modal="modal-13"></div>
+                  <div class="delete col-md-6 col-sm-6 md-trigger hand" data-modal="modal-8"> </div></td>
+              </tr>
+              <tr>
+                <td>2107726</td>
+                <td class="hidden-phone">Ajay Undale</td>
+                <td class="hidden-phone">ajay.undale@mahindra.com</td>
+                <td class="hidden-phone"><div class="serch hand"></div></td>
+                <td class="hidden-phone col-md-12"><div class="edit md-trigger col-md-6 col-sm-6 hand" data-modal="modal-13"></div>
+                  <div class="delete col-md-6 col-sm-6 md-trigger hand" data-modal="modal-8"> </div></td>
+              </tr>
+              <tr>
+                <td>2107726</td>
+                <td class="hidden-phone">Jitesh Talreja</td>
+                <td class="hidden-phone">JiteshTalreja@mahindra.com</td>
+                <td class="hidden-phone"><div class="serch hand"></div></td>
+                <td class="hidden-phone col-md-12"><div class="edit md-trigger col-md-6 col-sm-6 hand" data-modal="modal-13"></div>
+                  <div class="delete col-md-6 col-sm-6 md-trigger hand" data-modal="modal-8"> </div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Employee grid data end--> 
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Employee Section end-->
+<div class="clearfix"></div>
+<!-- Question Section -->
+<section id="Question" class="Question-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-sm-12">
+        <label class="col-md-1 col-sm-2 nopad">Select Year</label>
+        <div class="col-md-2 col-sm-4">
+          <select class="form-control feld">
+            <option>2015</option>
+            <option>2016</option>
+          </select>
+        </div>
+        <label class="col-md-1 col-sm-2 nopad">Area</label>
+        <div class="col-md-2 col-sm-4 smpad">
+          <select class="form-control feld">
+            <option>All</option>
+            <option>2016</option>
+          </select>
+        </div>
+        <div class="col-md-3 col-sm-12 col-md-offset-3 nopad">
+          <div type="file" class="addbtn btn btn-default pull-left hand"> <img src="images/upload.png" style="margin-right: 10px;"/>Upload
+            <input type="file">
+          </div>
+          <div class="addbtn btn btn-default pull-right md-trigger" data-modal="modal-18"> <img src="images/add.png" style="margin-right: 10px;"/>Add Qustion </div>
+        </div>
+        <div class="clearfix"></div>
+        <!--Qustion grid data-->
+        <div class="table-responsive marg30">
+          <table class="table table-condensed table-striped table-bordered table-hover no-margin">
+            <thead>
+              <tr>
+                <th style="width:20%" class="bg">Question Type</th>
+                <th style="width:50%" class="hidden-phone bg">Question Description</th>
+                <th style="width:10%" class="hidden-phone bg">Area</th>
+                <th style="width:20%;" class="hidden-phone bg text-center">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Open ended</td>
+                <td class="hidden-phone">I feel that i am contributing to the overall version of my company.</td>
+                <td class="hidden-phone">MLU</td>
+                <td class="hidden-phone col-md-12"><div class="edit md-trigger col-md-6 col-sm-6 hand" data-modal="modal-13"></div>
+                  <div class="delete col-md-6 col-sm-6 md-trigger hand" data-modal="modal-8"> </div></td>
+              </tr>
+              <tr>
+                <td><span class="name">Ratings</span></td>
+                <td class="hidden-phone">Rating I see Career opportunities in line my career aspirations.</td>
+                <td class="hidden-phone">MLU</td>
+                <td class="hidden-phone col-md-12"><div class="edit md-trigger col-md-6 col-sm-6 hand" data-modal="modal-13"></div>
+                  <div class="delete col-md-6 col-sm-6 md-trigger hand" data-modal="modal-8"> </div></td>
+              </tr>
+              <tr>
+                <td>Open ended</td>
+                <td class="hidden-phone">I feel that i am contributing to the overall version of my company.</td>
+                <td class="hidden-phone">MLU</td>
+                <td class="hidden-phone col-md-12"><div class="edit md-trigger col-sm-6 col-md-6 hand" data-modal="modal-13"></div>
+                  <div class="delete col-md-6 md-trigger col-sm-6 hand" data-modal="modal-8"> </div></td>
+              </tr>
+              <tr>
+                <td>Open ended</td>
+                <td class="hidden-phone">I feel that i am contributing to the overall version of my company.</td>
+                <td class="hidden-phone">MLU</td>
+                <td class="hidden-phone col-md-12"><div class="edit md-trigger col-md-6 col-sm-6 hand" data-modal="modal-13"></div>
+                  <div class="delete col-md-6 col-sm-6 md-trigger hand" data-modal="modal-8"> </div></td>
+              </tr>
+              <tr>
+                <td>Open ended</td>
+                <td class="hidden-phone">I feel that i am contributing to the overall version of my company.</td>
+                <td class="hidden-phone">MLU</td>
+                <td class="hidden-phone col-md-12"><div class="edit md-trigger col-md-6 col-sm-6 hand" data-modal="modal-13"></div>
+                  <div class="delete col-md-6 col-sm-6 md-trigger hand" data-modal="modal-8"> </div></td>
+              </tr>
+              <tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Qustion grid data end--> 
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Question Section end--> 
+
+<!-- Dashboard Section -->
+<section id="Dashboard" class="Dashboard-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="col-md-6 col-sm-6 text-center"> <a href="#Status" class="btn btn-sq-lg addbtn2 page-scroll"> <img src="images/status.png" /><br />
+          <h2 class="fblack">Status</h2>
+          </a> </div>
+        <div class="col-md-6 col-sm-6 text-center"> <a href="" class="btn btn-sq-lg addbtn2"> <img src="images/report.png" /><br />
+          <h2 class="fblack">Report</h2>
+          </a> </div>
+      </div>
+    </div>
+  </div>
+  <div class="md-overlay"></div>
+  <!-- the overlay element --> 
+</section>
+<!-- Dashboard Section --> 
+<!-- Dashboard status section-->
+<section id="Status" class="Status-section">
+  <div class="container">
+    <div class="row"> 
+      <!--grid data-->
+      <div class="container marg30">
+        <div class="table-responsive">
+          <table class="table table-condensed table-striped table-bordered orngtbl table-hover tallbrd no-margin">
+            <thead>
+              <tr>
+                <th style="width:5%" class="orange">Sel</th>
+                <th style="width:20%" class="orange">Token Number</th>
+                <th style="width:45%" class="orange">Name</th>
+                <th style="width:20%" class="orange">Email</th>
+                <th style="width:10%" class="orange">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="brorange">
+                <td><input type="checkbox" /></td>
+                <td class="hidden-phone">C57000XX</td>
+                <td class="hidden-phone">John Smith</td>
+                <td class="hidden-phone">johnsmith@gmail.com</td>
+                <td>Completed</td>
+              </tr>
+              <tr class="brorange">
+                <td><input type="checkbox"></td>
+                <td class="hidden-phone">C5700043</td>
+                <td class="hidden-phone">Albert D Costa</td>
+                <td class="hidden-phone">C5700043@gmail.com</td>
+                <td>Pending</td>
+              </tr>
+              <tr class="brorange">
+                <td><input type="checkbox"></td>
+                <td class="hidden-phone">C5700022</td>
+                <td class="hidden-phone">Ajay Undhale</td>
+                <td class="hidden-phone">Ajayundhale@gmail.com</td>
+                <td>Completed</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td class="hidden-phone">C5700067</td>
+                <td class="hidden-phone">Amit Jain</td>
+                <td class="hidden-phone">jain.amit@mahindra.com</td>
+                <td>Completed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!--grid data end--> 
+    </div>
+  </div>
+</section>
+
+<!--Dashboard status section end--> 
+<!-- jQuery --> 
+<script src="js/jquery.js"></script> 
+
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script> 
+<!-- Scrolling Nav JavaScript --> 
+<script src="js/jquery.easing.min.js"></script> 
+<script src="js/scrolling-nav.js"></script> 
+<script src="js/classie.js"></script> 
+<script src="js/modalEffects.js"></script> 
+<script>
+$(".deleterow").on("click", function(){
+var $killrow = $(this).parent('tr');
+    $killrow.addClass("danger");
+$killrow.fadeOut(2000, function(){
+    $(this).remove();
+});});
+</script>
+</body>
+</html>

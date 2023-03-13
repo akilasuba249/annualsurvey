@@ -1,0 +1,1682 @@
+124html {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%
+}
+
+#menu2 {
+	margin-left: 95px;
+}
+
+#menu3 {
+	margin-left: 95px;
+}
+	.newpad
+	{
+	    padding-right: 0px;
+    padding-left: 50px;
+	}
+.orange {
+	background: #ed7d31;
+	color: #fff !important;
+	font-size: 16px !important;
+	font-weight: bold;
+}
+
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:focus,.navbar-inverse .navbar-nav>.active>a:hover
+	{
+	color: #fff;
+	border-bottom: #ffbe00 4px solid;
+	/* margin-top: -20px; */
+	height: 50px;
+	margin-top: -16px;
+}
+
+.navbar-inverse .navbar-nav>.disabled>a,.navbar-inverse .navbar-nav>.disabled>a:focus,.navbar-inverse .navbar-nav>.disabled>a:hover
+	{
+	color: #444;
+	background-color: transparent
+}
+
+.h1,h1 {
+	font-size: 36px;
+	text-align: center;
+	font-weight: 700;
+}
+
+.logo {
+	width: 160px;
+	margin-top: 5px;
+}
+
+.marg20 {
+	margin-top: 20px;
+}
+
+.bg {
+	background: #E51837;
+	color: #fff;
+}
+
+.librd {
+	height: 24px;
+	border-right: 1px #fff solid;
+	margin-top: 10px;
+}
+
+.opt {
+	font-size: 16px;
+	border: none;
+	background: none;
+}
+
+.wlcm {
+	margin-top: 25px;
+	float: right !important;
+	margin-right: -93px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.centerdata {
+	width: 60%;
+	margin: 0px auto;
+}
+
+.feld {
+	background: #ececec;
+}
+
+.ad {
+	background-image: url(../images/add.png);
+	width: 20px;
+	float: left;
+}
+
+.addbtn {
+	background-color: #E51837 !important;
+	color: #fff !important;
+	padding: 3px 12px !important;
+	border-radius: 2px !important;
+	/*padding-top: 0px !important;*/
+}
+
+.tp {
+	padding-top: 0px !important;
+}
+
+.addbtn:hover {
+	background: #00F !important;
+	color: #fff !important;
+}
+
+.panel-title {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 16px;
+	color: inherit;
+}
+
+.pull-rightn {
+	float: right !important;
+}
+
+.login {
+	width: 470px;
+	/* box-shadow: 2px 1px 2px #000; */
+	margin: 0px auto;
+	color: #fff;
+	padding: 30px 30px;
+	margin-top: 100px;
+	/* background: #E51837; */
+	font-size: 16px;
+	/* box-shadow: 2px 2px 4px 4px #ddd; */	
+}
+
+.logtext {
+	height: 50px;
+	padding: 10px 15px;
+	font-size: 18px;
+}
+
+.loginicon {
+	font-size: 22px;
+	margin-top: -8px;
+	color: #E51837;
+}
+
+.loginbutton,.ssobutton {
+	/* padding: 5px 30px;
+	width: 100%;
+	font-size: 18px;
+	float: right; */
+}
+
+.biglable {
+	width: 84%;
+	background: #F5F5F5;
+	border: none !important;
+	margin-top: 0px;
+	padding-top: 8px !important;
+	font-size: 16px;
+	color: inherit;
+	word-break: break-word;
+}
+
+.smalllable {
+	width: 115px !important;
+	background: #F5F5F5;
+	text-align: right;
+	border: none !important;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 16px;
+	color: inherit;
+}
+
+.brn {
+	border: none !important;
+}
+/* Rectangle In */
+.hvr-rectangle-in {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	color: #E51837;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	background: #2098d1;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+.hvr-rectangle-in:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff !important;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	color: #E51837;
+	transition-timing-function: ease-out;
+}
+
+.hvr-rectangle-in:hover,.hvr-rectangle-in:focus,.hvr-rectangle-in:active
+	{
+	color: white;
+}
+
+.hvr-rectangle-in:hover:before,.hvr-rectangle-in:focus:before,.hvr-rectangle-in:active:before
+	{
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+.tbrder {
+	border-bottom: 2px solid #FAFBFD !important;
+}
+
+.tallbrd {
+	border-left: 1px solid #ED7D31;
+	border-right: 1px solid #ED7D31;
+	border-bottom: 1px solid #ED7D31 !important;
+}
+
+.checkbox a {
+	color: #fff;
+}
+
+.usericon {
+	background: url(../images/usericon.png);
+	width: 150px;
+	height: 150px;
+	margin: 0px auto;
+	margin-top: -110px;
+}
+
+.usericon:hover {
+	background: url(../images/userhover.png);
+	cursor: pointer;
+}
+
+.left13 {
+	margin-left: 135px;
+}
+
+.navbar-fixed-top {
+	top: 55px;
+	border-width: 0 0 1px;
+}
+
+.que1 {
+	width: 15%;
+}
+
+.que2 {
+	width: 35%;
+}
+
+.que3 {
+	width: 30%;
+}
+
+.que4 {
+	width: 10%;
+}
+
+.que5 {
+	width: 10%;
+}
+
+.survey1 {
+	width: 20%;
+}
+
+.survey2 {
+	width: 30%;
+}
+
+.trck1 {
+	width: 5%;
+}
+
+.trck2 {
+	width: 15%;
+}
+
+.trck3 {
+	width: 35%;
+}
+
+.trck4 {
+	width: 35%;
+}
+
+.trck5 {
+	width: 10%;
+}
+
+.circle {
+	width: 10px;
+	height: 10px;
+	background: #E51837;
+	border-radius: 5px;
+	margin-left: 5px;
+}
+
+.edit {
+	background: url(../images/edit.png);
+	width: 25px;
+	height: 25px;
+	padding: 0px !important;
+	margin-left: 20px;
+}
+
+.delete {
+	background: url(../images/delete.png);
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+	padding: 0px !important;
+	float: right;
+/* 	margin-right: -10px; */
+}
+
+.addtext {
+	width: 301px;
+	margin-left: 205px;
+	margin-top: 10px;
+	float: left;
+}
+
+.logo2 {
+	width: 160px;
+	margin-top: 5px;
+}
+
+/******************************************* media start **************************************/
+/******************************************* media start **************************************/
+/******************************************* media start **************************************/
+/******************************************* media start **************************************/
+/******************************************* media start **************************************/
+@media screen and (max-width:768px) {
+	
+	.optcustomradip {
+		text-align:left;
+	}
+	
+	. {
+		height: 130px;
+	}
+	
+	.whiteh1 {
+	    color: #fff !important;
+	    font-size: 18px !important;
+	}
+	
+	.bg {
+/* 		height:  130px !important; */
+	}
+	
+	
+	.dropdown-menu {
+		left: -125px;
+	}
+	.h1,h1 {
+		font-size: 28px;
+		text-align: center;
+		font-weight: bold;
+	}
+	.tbrder {
+		border-bottom: 2px solid #FAFBFD !important;
+	}
+	.modal {
+		position: fixed;
+		top: -50%;
+		vertical-align: middle;
+	}
+	.logo {
+		width: 160px;
+	}
+	.logo2 {
+		width: 145px;
+		margin-top: 5px;
+	}
+	.wlcm {
+		margin-top: 12px;
+		float: right !important;
+		margin-right: -3px;
+		font-weight: bold;
+		font-size: 18px;
+	}
+	.opt {
+		font-size: 18px;
+		border: medium none;
+		background: none repeat scroll 0% 0% transparent;
+		margin-top: 10px;
+	}
+	.panel-title {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		font-size: 18px;
+		color: inherit;
+	}
+	.smpad {
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.navbar-fixed-top {
+		top: 44px;
+		border-width: 0 0 1px;
+	}
+	table.table-fixedheader>tbody {
+		overflow-y: scroll;
+		max-height: 320px;
+	}
+	.delete {
+		margin-right: 0px !important;
+	}
+	.tallbrd {
+		border-left: 1px solid #ED7D31;
+		border-right: 1px solid #ED7D31;
+		border-bottom: 1px solid #ED7D31 !important;
+	}
+	.top10 {
+		padding-top: 10px;
+	}
+	.orange {
+		background: #ed7d31;
+		color: #fff !important;
+		font-size: 14px !important;
+		font-weight: bold;
+	}
+	.bg {
+		background: none repeat scroll 0% 0% #E51837;
+		color: #FFF;
+	}
+	.addbtn {
+		background-color: #E51837 !important;
+		color: #fff !important;
+	}
+	.addbtn:hover {
+		background: #00F !important;
+		color: #fff !important;
+	}
+	.login {
+		width: 450px;
+		box-shadow: 2px 1px 2px #000;
+		margin: 0px auto;
+		color: #fff;
+		padding: 30px 30px;
+		margin-top: 100px;
+		background: #E51837;
+		font-size: 16px;
+	}
+	.logtext {
+		height: 50px;
+		padding: 10px 15px;
+		font-size: 18px;
+	}
+	.loginicon {
+		font-size: 22px;
+		margin-top: -8px;
+		color: #E51837;
+	}
+	.loginbutton {
+		padding: 10px;
+		width: 390px;
+		font-size: 22px;
+	}
+	.biglable {
+		width: 70%;
+		background: #F5F5F5;
+		border: none !important;
+		margin-top: 0px;
+		padding-top: 8px !important;
+		font-size: 16px;
+		color: inherit;
+	}
+	.smalllable {
+		width: 30%;
+		background: #F5F5F5;
+		border: none !important;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		font-size: 16px;
+		color: inherit;
+		text-align: right;
+	}
+	.switch {
+		position: relative;
+		margin: 1px auto;
+		height: 28px;
+		width: 56px;
+		background: url(../images/tick.png);
+		border-radius: 3px;
+		-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px
+			rgba(255, 255, 255, 0.1);
+		box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px
+			rgba(255, 255, 255, 0.1);
+	}
+	.tp {
+		top: 0px;
+	}
+	.pright {
+		padding-right: 0px;
+	}
+	.dropp {
+		padding: 20px;
+		top: 32px;
+	}
+	.fwh {
+		color: #fff !important;
+	}
+	.Divider {
+		background: url(../images/Page-Divider.png);
+		margin: 0px auto;
+		width: auto;
+	}
+	.sadd {
+		margin-right: 6px !important;
+		font-size: 20px !important;
+		top: 5px;
+	}
+	.switch-label {
+		position: relative;
+		z-index: 2;
+		float: left;
+		width: 58px;
+		line-height: 26px;
+		font-size: 11px;
+		color: rgba(255, 255, 255, 0.35);
+		text-align: center;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+		cursor: pointer;
+	}
+	.switch-label:active {
+		font-weight: bold;
+	}
+	.switch-label-off {
+		float: left;
+		display: inline;
+		height: 26px;
+		width: 26px;
+		padding-left: 2px;
+	}
+	.switch-label-on {
+		padding-right: 2px;
+		float: left;
+		display: inline;
+		height: 26px;
+		width: 26px;
+	}
+	.switch-input {
+		display: none;
+	}
+	.switch-input:checked+.switch-label {
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.65);
+		text-shadow: 0 1px rgba(255, 255, 255, 0.25);
+		-webkit-transition: 0.15s ease-out;
+		-moz-transition: 0.15s ease-out;
+		-o-transition: 0.15s ease-out;
+		transition: 0.15s ease-out;
+	}
+	.switch-input:checked+.switch-label-on ~ .switch-selection {
+		/* Note: left: 50% doesn't transition in WebKit */
+		left: 28px;
+	}
+	.switch-selection {
+		display: block;
+		position: absolute;
+		z-index: 1;
+		top: 2px;
+		left: 2px;
+		width: 26px;
+		height: 24px;
+		background: #f25743 url(../images/line.png);
+		border-radius: 3px;
+		-webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px
+			rgba(0, 0, 0, 0.2);
+		box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px
+			rgba(0, 0, 0, 0.2);
+		-webkit-transition: left 0.15s ease-out;
+		-moz-transition: left 0.15s ease-out;
+		-o-transition: left 0.15s ease-out;
+		transition: left 0.15s ease-out;
+	}
+	.switch-blue .switch-selection {
+		background: #3aa2d0;
+		background-image: -webkit-linear-gradient(top, #4fc9ee, #3aa2d0);
+		background-image: -moz-linear-gradient(top, #4fc9ee, #3aa2d0);
+		background-image: -o-linear-gradient(top, #4fc9ee, #3aa2d0);
+		background-image: linear-gradient(to bottom, #4fc9ee, #3aa2d0);
+	}
+	.switch-yellow .switch-selection {
+		background: #c4bb61;
+		background-image: -webkit-linear-gradient(top, #e0dd94, #c4bb61);
+		background-image: -moz-linear-gradient(top, #e0dd94, #c4bb61);
+		background-image: -o-linear-gradient(top, #e0dd94, #c4bb61);
+		background-image: linear-gradient(to bottom, #e0dd94, #c4bb61);
+	}
+	.nopad {
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+		padding-top: 5px;
+	}
+	.marg30 {
+		margin-top: 30px;
+	}
+	.brorange {
+		/* border-bottom: 1px solid #ED7D31 !important; */
+		
+	}
+	.mrgleft {
+		margin-left: 10px;
+	}
+	.file {
+		display: block !important;
+		width: 74px !important;
+		opacity: 0 !important;
+		margin-top: -22px !important;
+		cursor: pointer !important;
+	}
+	.w5 {
+		width: 500px !important;
+	}
+	.addbtn2 {
+		background: #9ad9ea !important;
+		color: #000 !important;
+		padding: 10px 50px;
+		border-radius: 15px !important;
+		font-size: 26px;
+	}
+	.addbtn2:hover {
+		border: 2px solid #000;
+	}
+	.fblack {
+		color: #000 !important;
+		font-weight: bold;
+	}
+	.fwhite {
+		color: #fff !important;
+		font-weight: bold;
+	}
+	/* enable absolute positioning */
+	.inner-addon {
+		position: relative;
+	}
+
+	/* style glyph */
+	.inner-addon .glyphicon {
+		position: absolute;
+		padding: 7px 10px;
+		pointer-events: none;
+	}
+	.whiteb {
+		background: #fff !important;
+	}
+
+	/* align glyph */
+	.left-addon .glyphicon {
+		left: 0px;
+	}
+	.right-addon .glyphicon {
+		right: 0px;
+	}
+
+	/* add padding  */
+	.left-addon input {
+		padding-left: 30px;
+	}
+	.right-addon input {
+		padding-right: 30px;
+	}
+	#slidediv {
+		color: #F25022;
+		background-color: #EFEFEF;
+		border: 2px solid #00A4EF;
+		display: none;
+		text-align: justify;
+	}
+	#slidediv p {
+		margin: 15px;
+		font-size: 0.917em;
+	}
+	#contentdiv {
+		clear: both;
+		margin: 0 auto;
+		max-width: 534px;
+	}
+	.fxtop {
+		top: 0px;
+		position: absolute !important;
+		right: 0;
+		background: #FAFBFD;
+		left: 0;
+		z-index: 1030;
+	}
+	.nomrg {
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+		padding-top: 0px;
+	}
+	.log {
+		background: url(../images/logout.png);
+		height: 30px;
+		display: -webkit-inline-box;
+		width: 30px;
+		margin-bottom: -8px;
+		margin-left: 7px;
+	}
+	.f20 {
+		font-size: 20px !important;
+	}
+	.f18 {
+		font-size: 16px !important;
+	}
+	.svb {
+		margin-top: 25px !important;
+		font-size: 18px;
+	}
+	.f18 li {
+		margin: 15px 5px;
+	}
+	.log:hover {
+		background: url(../images/logouthover.png);
+		cursor: pointer;
+	}
+	.survey {
+		font-size: 18px;
+		font-weight: bold;
+		color: #333;
+	}
+	.orngtbl {
+		background: #fcece8 !important;
+	}
+	.marg10 {
+		margin-top: 10px;
+	}
+	.yellow {
+		background: #fafee3 !important;
+		color: #3a3b2f !important;
+		margin-bottom: 0px !important;
+		border: 0px !important;
+		border-radius: 0px !important;
+		padding: 10px 0px !important;
+	}
+	.gray {
+		background: #ecf0d9;
+		margin-bottom: 0px !important;
+		border: 0px !important;
+		border-radius: 0px !important;
+		padding: 10px 0px !important;
+		color: #3a3b2f !important;
+	}
+	.radioboxarea {
+		width: 10%;
+		display: inline-block;
+	}
+	.radioboxarea15 {
+		width: 15%;
+		display: inline-block;
+		float: left;
+	}
+	.mrg12 {
+		margin-top: 12px !important;
+	}
+	.hand {
+		cursor: pointer;
+	}
+	.serch {
+		background: url(../images/serch.png);
+		width: 21px;
+		height: 21px;
+		background-size: cover;
+	}
+	.edit {
+		background: transparent url("../images/edit.png") repeat scroll 0% 0%/cover;
+		width: 20px;
+		height: 20px;
+		padding: 0px !important;
+		margin-left: 0px !important;
+	}
+	.textbold {
+		font-weight: bold !important;
+	}
+	.delete {
+		background: url(../images/delete.png);
+		width: 20px;
+		height: 20px;
+		background-size: cover;
+		padding: 0px !important;
+		float: right;
+		margin-right: 1px !important;
+	}
+	.ml {
+    margin-left: 0px;
+}
+.mr {
+    margin-right: 0px;
+}
+	.addbtn a {
+		color: #fff !important;
+		text-decoration: none;
+	}
+	.addbtn a:hover {
+		color: #fff !important;
+		text-decoration: none;
+	}
+	.wlcmeTxt {
+		text-align: right;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.wlcmeTxt a {
+		color: #333;
+		text-decoration: none;
+		margin-right: 10px;
+		font-size: 13px;
+	}
+	.wlcmeTxt ul li a {
+		margin-right: 0;
+	}
+	.whitebg {
+		background: #fff !important;
+		color: :#333;
+	}
+	/*
+Force table width to 100%
+*/
+	table.table-fixedheader {
+		width: 100%;
+	}
+	/*
+Set table elements to block mode.  (Normally they are inline).
+This allows a responsive table, such as one where columns can be stacked
+if the display is narrow.
+*/
+	table.table-fixedheader,table.table-fixedheader>thead,table.table-fixedheader>tbody,table.table-fixedheader>thead>tr,table.table-fixedheader>tbody>tr,table.table-fixedheader>thead>tr>th,table.table-fixedheader>tbody>td
+		{
+		display: block;
+	}
+	table.table-fixedheader>thead>tr:after,table.table-fixedheader>tbody>tr:after
+		{
+		content: ' ';
+		display: block;
+		visibility: hidden;
+		clear: both;
+	}
+	/*
+When scrolling the table, actually it is only the tbody portion of the
+table that scrolls (not the entire table: we want the thead to remain
+fixed).  We must specify an explicit height for the tbody.  We include
+100px as a default, but it can be overridden elsewhere.
+
+Also, we force the scrollbar to always be displayed so that the usable
+width for the table contents doesn't change (such as becoming narrower
+when a scrollbar is visible and wider when it is not).
+*/
+	table.table-fixedheader>tbody {
+		overflow-y: scroll;
+		max-height: 320px;
+	}
+	/*
+We really don't want to scroll the thead contents, but we want to force
+a scrollbar to be displayed anyway so that the usable width of the thead
+will exactly match the tbody.
+*/
+	table.table-fixedheader>thead {
+		/*     overflow-y: scroll; */
+		
+	}
+	/*
+For browsers that support it (webkit), we set the background color of
+the unneeded scrollbar in the thead to make it invisible.  (Setting
+visiblity: hidden defeats the purpose, as this alters the usable width
+of the thead.)
+*/
+	table.table-fixedheader>thead::-webkit-scrollbar {
+		background-color: inherit;
+	}
+	table.table-fixedheader>thead>tr>th:after,table.table-fixedheader>tbody>tr>td:after
+		{
+		content: ' ';
+		display: table-cell;
+		visibility: hidden;
+		clear: both;
+	}
+
+	/*
+We want to set <th> and <td> elements to float left.
+We also must explicitly set the width for each column (both for the <th>
+and the <td>).  We set to 20% here a default placeholder, but it can be
+overridden elsewhere.
+*/
+	table.table-fixedheader>thead tr th,table.table-fixedheader>tbody tr td
+		{
+		float: left;
+	}
+	.emp1 {
+		width: 15%;
+	}
+	.emp2 {
+		width: 25%;
+	}
+	.emp3 {
+		width: 38%;
+	}
+	.emp4 {
+		width: 75%;
+	}
+	.emp5 {
+		width: 15%;
+	}
+	.trck1 {
+		width: 5%;
+	}
+	.trck2 {
+		width: 17%;
+	}
+	.trck3 {
+		width: 33%;
+	}
+	.trck4 {
+		width: 35%;
+	}
+	.trck5 {
+		width: 10%;
+	}
+	#menu2 {
+		margin-left: 40px;
+	}
+	#menu3 {
+		margin-left: 40px;
+	}
+	.addbtn {
+		background-color: #E51837 !important;
+		color: #fff !important;
+		padding: 3px 10px !important;
+		border-radius: 2px !important;
+		/* padding-top: 0px !important; */
+	}
+	.tp {
+		top: 0px;
+	}
+	.tp {
+		padding-top: 0px !important;
+	}
+	.que1 {
+		width: 15%;
+	}
+	.que2 {
+		width: 40%;
+	}
+	.que3 {
+		width: 20%;
+	}
+	.que4 {
+		width: 10%;
+	}
+	.que5 {
+		width: 15%;
+	}
+	.survey1 {
+		width: 20%;
+	}
+	.survey2 {
+		width: 30%;
+	}
+	.table-bordered>tbody>tr>td,.table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>td,.table-bordered>tfoot>tr>th,.table-bordered>thead>tr>td,.table-bordered>thead>tr>th
+		{
+		border: medium none;
+		padding: 7px 10px;
+		font-size: 14px;
+	}
+
+	.newpad {
+    padding-right: 0px !important;
+    padding-left: 30px !important;
+}
+	.serch {
+		margin-left: 0px !important;
+	}
+}
+/******************************************* media start **************************************/
+/******************************************* media start **************************************/
+/******************************************* media start **************************************/
+/******************************************* media start **************************************/
+
+
+@media screen and (max-width:1024px) {
+	.h1,h1 {
+		font-size: 26px;
+		text-align: center;
+		font-weight: bold;
+	}
+	.newpad {
+    padding-right: 0px !important;
+    padding-left: 30px !important;
+}
+	.ml {
+    margin-left: 0px;
+}
+.mr {
+    margin-right: 0px;
+}
+	.tbrder {
+		border-bottom: 2px solid #FAFBFD !important;
+	}
+	.logo {
+		width: 160px;
+	}
+	.wlcm {
+		margin-top: 12px;
+		float: right !important;
+		margin-right: -3px;
+		font-weight: bold;
+		font-size: 18px;
+	}
+	.opt {
+		font-size: 18px;
+		border: medium none;
+		background: none repeat scroll 0% 0% transparent;
+		margin-top: 10px;
+	}
+	.panel-title {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		font-size: 18px;
+		color: inherit;
+	}
+	.smpad {
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.navbar-fixed-top {
+		top: 44px;
+		border-width: 0 0 1px;
+	}
+	table.table-fixedheader>tbody {
+		overflow-y: scroll;
+		max-height: 320px;
+	}
+	.delete {
+		margin-right: 10px;
+	}
+	.tallbrd {
+		border-left: 1px solid #ED7D31;
+		border-right: 1px solid #ED7D31;
+		border-bottom: 1px solid #ED7D31 !important;
+	}
+	.top10 {
+		padding-top: 10px;
+	}
+	.edit {
+		margin-left: 0px;
+	}
+	.orange {
+		background: #ed7d31;
+		color: #fff !important;
+		font-size: 14px !important;
+		font-weight: bold;
+	}
+	.bg {
+		background: none repeat scroll 0% 0% #E51837;
+		color: #FFF;
+/* 		height: 171px; */
+	}
+	
+	.Survey-section {
+    padding-top: 70px;
+}
+	.addbtn {
+		background-color: #E51837 !important;
+		color: #fff !important;
+	}
+	.addbtn:hover {
+		background: #00F !important;
+		color: #fff !important;
+	}
+	.login {
+		/* width: 450px;
+		box-shadow: 2px 1px 2px #000;
+		margin: 0px auto;
+		color: #fff;
+		padding: 30px 30px;
+		margin-top: 100px;
+		background: #E51837;
+		font-size: 16px; */
+		width: 100%;
+		margin: 90px auto;
+	}
+	
+	.login-form .glyphicon {
+		float: none;
+    right: 0;
+	}
+	.logtext {
+		height: 50px;
+		padding: 10px 15px;
+		font-size: 18px;
+	}
+	
+	.frmbtn {
+    float: left;
+    margin-right: 5px;
+    width: 200px !important;
+}
+	.loginicon {
+		font-size: 22px;
+		margin-top: -8px;
+		color: #E51837;
+	}
+	.loginbutton {
+		padding: 5px 30px;
+		/* width: 390px; */
+		font-size: 22px;
+	}
+	.biglable {
+		width: 70%;
+		background: #F5F5F5;
+		border: none !important;
+		margin-top: 0px;
+		padding-top: 8px !important;
+		font-size: 16px;
+		color: inherit;
+	}
+	.smalllable {
+		width: 30%;
+		background: #F5F5F5;
+		border: none !important;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		font-size: 16px;
+		color: inherit;
+		text-align: right;
+	}
+	.switch {
+		position: relative;
+		margin: 1px auto;
+		height: 28px;
+		width: 56px;
+		background: url(../images/tick.png);
+		border-radius: 3px;
+		-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px
+			rgba(255, 255, 255, 0.1);
+		box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px
+			rgba(255, 255, 255, 0.1);
+	}
+	.tp {
+		top: 0px;
+	}
+	.pright {
+		padding-right: 0px;
+	}
+	.dropp {
+		padding: 20px;
+		top: 32px;
+	}
+	.fwh {
+		color: #fff !important;
+	}
+	.Divider {
+		background: url(../images/Page-Divider.png);
+		margin: 0px auto;
+		width: auto;
+	}
+	.sadd {
+		margin-right: 6px !important;
+		font-size: 20px !important;
+		top: 5px;
+	}
+	.switch-label {
+		position: relative;
+		z-index: 2;
+		float: left;
+		width: 58px;
+		line-height: 26px;
+		font-size: 11px;
+		color: rgba(255, 255, 255, 0.35);
+		text-align: center;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+		cursor: pointer;
+	}
+	.switch-label:active {
+		font-weight: bold;
+	}
+	.switch-label-off {
+		float: left;
+		display: inline;
+		height: 26px;
+		width: 26px;
+		padding-left: 2px;
+	}
+	.switch-label-on {
+		padding-right: 2px;
+		float: left;
+		display: inline;
+		height: 26px;
+		width: 26px;
+	}
+	.switch-input {
+		display: none;
+	}
+	.switch-input:checked+.switch-label {
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.65);
+		text-shadow: 0 1px rgba(255, 255, 255, 0.25);
+		-webkit-transition: 0.15s ease-out;
+		-moz-transition: 0.15s ease-out;
+		-o-transition: 0.15s ease-out;
+		transition: 0.15s ease-out;
+	}
+	.switch-input:checked+.switch-label-on ~ .switch-selection {
+		/* Note: left: 50% doesn't transition in WebKit */
+		left: 28px;
+	}
+	.switch-selection {
+		display: block;
+		position: absolute;
+		z-index: 1;
+		top: 2px;
+		left: 2px;
+		width: 26px;
+		height: 24px;
+		background: #f25743 url(../images/line.png);
+		border-radius: 3px;
+		-webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px
+			rgba(0, 0, 0, 0.2);
+		box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px
+			rgba(0, 0, 0, 0.2);
+		-webkit-transition: left 0.15s ease-out;
+		-moz-transition: left 0.15s ease-out;
+		-o-transition: left 0.15s ease-out;
+		transition: left 0.15s ease-out;
+	}
+	.switch-blue .switch-selection {
+		background: #3aa2d0;
+		background-image: -webkit-linear-gradient(top, #4fc9ee, #3aa2d0);
+		background-image: -moz-linear-gradient(top, #4fc9ee, #3aa2d0);
+		background-image: -o-linear-gradient(top, #4fc9ee, #3aa2d0);
+		background-image: linear-gradient(to bottom, #4fc9ee, #3aa2d0);
+	}
+	.switch-yellow .switch-selection {
+		background: #c4bb61;
+		background-image: -webkit-linear-gradient(top, #e0dd94, #c4bb61);
+		background-image: -moz-linear-gradient(top, #e0dd94, #c4bb61);
+		background-image: -o-linear-gradient(top, #e0dd94, #c4bb61);
+		background-image: linear-gradient(to bottom, #e0dd94, #c4bb61);
+	}
+	.nopad {
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+		padding-top: 5px;
+	}
+	.marg30 {
+		margin-top: 30px;
+	}
+	.brorange {
+		/* border-bottom: 1px solid #ED7D31 !important; */
+		
+	}
+	.mrgleft {
+		margin-left: 10px;
+	}
+	.file {
+		display: block !important;
+		width: 74px !important;
+		opacity: 0 !important;
+		margin-top: -22px !important;
+		cursor: pointer !important;
+	}
+	.w5 {
+		width: 500px !important;
+	}
+	.addbtn2 {
+		background: #9ad9ea !important;
+		color: #000 !important;
+		padding: 10px 50px;
+		border-radius: 15px !important;
+		font-size: 26px;
+	}
+	.addbtn2:hover {
+		border: 2px solid #000;
+	}
+	.fblack {
+		color: #000 !important;
+		font-weight: bold;
+	}
+	.fwhite {
+		color: #fff !important;
+		font-weight: bold;
+	}
+	/* enable absolute positioning */
+	.inner-addon {
+		position: relative;
+	}
+
+	/* style glyph */
+	.inner-addon .glyphicon {
+		position: absolute;
+		padding: 7px 10px;
+		pointer-events: none;
+	}
+	.whiteb {
+		background: #fff !important;
+	}
+
+	/* align glyph */
+	.left-addon .glyphicon {
+		left: 0px;
+	}
+	.right-addon .glyphicon {
+		right: 0px;
+	}
+
+	/* add padding  */
+	.left-addon input {
+		padding-left: 30px;
+	}
+	.right-addon input {
+		padding-right: 30px;
+	}
+	#slidediv {
+		color: #F25022;
+		background-color: #EFEFEF;
+		border: 2px solid #00A4EF;
+		display: none;
+		text-align: justify;
+	}
+	#slidediv p {
+		margin: 15px;
+		font-size: 0.917em;
+	}
+	#contentdiv {
+		clear: both;
+		margin: 0 auto;
+		max-width: 534px;
+	}
+	.fxtop {
+		top: 0px;
+		position: fixed;
+		right: 0;
+		background: #FAFBFD;
+		left: 0;
+		z-index: 1030;
+	}
+	.nomrg {
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+		padding-top: 0px;
+		text-align: center;
+/*     border-bottom: 1px solid white; */
+	}
+	.log {
+		background: url(../images/logout.png);
+		height: 30px;
+		display: -webkit-inline-box;
+		width: 30px;
+		margin-bottom: -8px;
+		margin-left: 7px;
+	}
+	
+	.udrpdwn {
+    top: 16px;
+    float: right;
+    /* right: -113px; */
+}
+
+.genradio {
+    position: inherit;
+}
+
+
+	.f20 {
+		font-size: 20px !important;
+	}
+	.f18 {
+		font-size: 16px !important;
+	}
+	.svb {
+		margin-top: 25px !important;
+		font-size: 18px;
+	}
+	.f18 li {
+		margin: 15px 5px;
+	}
+	.log:hover {
+		background: url(../images/logouthover.png);
+		cursor: pointer;
+	}
+	.survey {
+		font-size: 18px;
+		font-weight: bold;
+		color: #333;
+	}
+	.orngtbl {
+		background: #fcece8 !important;
+	}
+	.marg10 {
+		margin-top: 10px;
+	}
+	.yellow {
+		background: #fafee3 !important;
+		color: #3a3b2f !important;
+		margin-bottom: 0px !important;
+		border: 0px !important;
+		border-radius: 0px !important;
+		padding: 10px 0px !important;
+	}
+	.gray {
+		background: #ecf0d9;
+		margin-bottom: 0px !important;
+		border: 0px !important;
+		border-radius: 0px !important;
+		padding: 10px 0px !important;
+		color: #3a3b2f !important;
+	}
+	.radioboxarea {
+		width: 10%;
+		display: inline-block;
+	}
+	.radioboxarea15 {
+		width: 15%;
+		display: inline-block;
+		float: left;
+	}
+	.mrg12 {
+		margin-top: 12px !important;
+	}
+	.hand {
+		cursor: pointer;
+	}
+	.serch {
+		background: url(../images/serch.png);
+		width: 21px;
+		height: 21px;
+		background-size: cover;
+		margin-left: 0px !important;
+	}
+	
+	.textbold {
+		font-weight: bold !important;
+	}
+
+	.addbtn a {
+		color: #fff !important;
+		text-decoration: none;
+	}
+	.addbtn a:hover {
+		color: #fff !important;
+		text-decoration: none;
+	}
+	.wlcmeTxt {
+		text-align: right;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.wlcmeTxt a {
+		color: #333;
+		text-decoration: none;
+		margin-right: 10px;
+		font-size: 13px;
+		    
+	}
+	.wlcmeTxt ul li a {
+		margin-right: 0;
+	}
+	.whitebg {
+		background: #fff !important;
+		color: :#333;
+	}
+	/*
+Force table width to 100%
+*/
+	table.table-fixedheader {
+		width: 100%;
+	}
+	/*
+Set table elements to block mode.  (Normally they are inline).
+This allows a responsive table, such as one where columns can be stacked
+if the display is narrow.
+*/
+	table.table-fixedheader,table.table-fixedheader>thead,table.table-fixedheader>tbody,table.table-fixedheader>thead>tr,table.table-fixedheader>tbody>tr,table.table-fixedheader>thead>tr>th,table.table-fixedheader>tbody>td
+		{
+		display: block;
+	}
+	table.table-fixedheader>thead>tr:after,table.table-fixedheader>tbody>tr:after
+		{
+		content: ' ';
+		display: block;
+		visibility: hidden;
+		clear: both;
+	}
+	/*
+When scrolling the table, actually it is only the tbody portion of the
+table that scrolls (not the entire table: we want the thead to remain
+fixed).  We must specify an explicit height for the tbody.  We include
+100px as a default, but it can be overridden elsewhere.
+
+Also, we force the scrollbar to always be displayed so that the usable
+width for the table contents doesn't change (such as becoming narrower
+when a scrollbar is visible and wider when it is not).
+*/
+	table.table-fixedheader>tbody {
+		overflow-y: scroll;
+		max-height: 320px;
+	}
+	/*
+We really don't want to scroll the thead contents, but we want to force
+a scrollbar to be displayed anyway so that the usable width of the thead
+will exactly match the tbody.
+*/
+	table.table-fixedheader>thead {
+		/*     overflow-y: scroll; */
+		
+	}
+	/*
+For browsers that support it (webkit), we set the background color of
+the unneeded scrollbar in the thead to make it invisible.  (Setting
+visiblity: hidden defeats the purpose, as this alters the usable width
+of the thead.)
+*/
+	table.table-fixedheader>thead::-webkit-scrollbar {
+		background-color: inherit;
+	}
+	table.table-fixedheader>thead>tr>th:after,table.table-fixedheader>tbody>tr>td:after
+		{
+		content: ' ';
+		display: table-cell;
+		visibility: hidden;
+		clear: both;
+	}
+
+	/*
+We want to set <th> and <td> elements to float left.
+We also must explicitly set the width for each column (both for the <th>
+and the <td>).  We set to 20% here a default placeholder, but it can be
+overridden elsewhere.
+*/
+	table.table-fixedheader>thead tr th,table.table-fixedheader>tbody tr td
+		{
+		float: left;
+	}
+	.emp1 {
+		width: 15%;
+	}
+	.emp2 {
+		width: 25%;
+	}
+	.emp3 {
+		width: 38%;
+	}
+	.emp4 {
+		width: 75%;
+	}
+	.emp5 {
+		width: 15%;
+	}
+	.trck1 {
+		width: 5%;
+	}
+	.trck2 {
+		width: 17%;
+	}
+	.trck3 {
+		width: 33%;
+	}
+	.trck4 {
+		width: 35%;
+	}
+	.trck5 {
+		width: 10%;
+	}
+	#menu2 {
+		margin-left: 40px;
+	}
+	#menu3 {
+		margin-left: 40px;
+	}
+	.addbtn {
+		background-color: #E51837 !important;
+		color: #fff !important;
+		padding: 3px 10px !important;
+		border-radius: 2px !important;
+		/* padding-top: 0px !important; */
+	}
+	.tp {
+		top: 0px;
+	}
+	.tp {
+		padding-top: 0px !important;
+	}
+	.que1 {
+		width: 15%;
+	}
+	.que2 {
+		width: 40%;
+	}
+	.que3 {
+		width: 20%;
+	}
+	.que4 {
+		width: 10%;
+	}
+	.que5 {
+		width: 15%;
+	}
+	.survey1 {
+		width: 20%;
+	}
+	.survey2 {
+		width: 30%;
+	}
+	.table-bordered>tbody>tr>td,.table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>td,.table-bordered>tfoot>tr>th,.table-bordered>thead>tr>td,.table-bordered>thead>tr>th
+		{
+		border: medium none;
+		padding: 7px 10px;
+		font-size: 14px;
+	}
+	.edit {
+		background: transparent url("../images/edit.png") repeat scroll 0% 0%/cover;
+		width: 20px;
+		height: 20px;
+		padding: 0px;
+		margin-left: 10px;
+	}
+}
+@media screen and (max-width:767px){
+	.bg{
+		height: 157px!important;
+	}
+	.login-div{
+		text-align: center;
+	}
+	.udrpdwn{
+		float:none!important;
+	}
+	.dropdown-menu{
+		left: 20px;
+	}
+	.btn-box{
+		padding: 0;
+		text-align: center;
+	}
+	.Survey-section{
+		padding-top: 160px;
+	}
+	.genderradiobtn{
+		font-size: 16px;
+	}
+	.comment.addcmntchk{
+		width: 16px;
+		height: 20px;
+	}
+	body{
+	font-size:100%;}
+}
+@media screen and (max-width:767px) {
+	.nomrg{
+	    border-bottom: 1px solid white;
+	}
+}

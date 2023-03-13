@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:task="http://www.springframework.org/schema/task" 
+	xsi:schemaLocation="
+   http://www.springframework.org/schema/beans     
+   http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+   http://www.springframework.org/schema/context 
+   http://www.springframework.org/schema/context/spring-context-4.2.xsd
+   http://www.springframework.org/schema/mvc
+   http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+   http://www.springframework.org/schema/tx 
+   http://www.springframework.org/schema/tx/spring-tx.xsd
+   http://www.springframework.org/schema/task
+   http://www.springframework.org/schema/task/spring-task-4.2.xsd
+   ">
+
+	<context:component-scan base-package="com.mahindra.annualsurvey.*" />
+	<mvc:annotation-driven />
+
+
+
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+
+	</bean>
+
+
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/pbview/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<mvc:resources mapping="/**" location="/" />
+
+	<bean id="appemf"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="packagesToScan" value="com.mahindra.annualsurvey.model" />
+		<property name="jpaVendorAdapter">
+			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
+		</property>
+		<property name="jpaProperties">
+			<props>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="connection_pool_size">20</prop>
+				<!-- <prop key="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</prop> -->
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.enable_lazy_load_no_trans">true</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+
+		<!-- <property name="url" value="jdbc:mysql://10.2.152.187:3306/msquare"/> 
+			<property name="username" value="root" /> <property name="password" value="pass,123" 
+			/> -->
+
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/annual_survey" />
+		<property name="username" value="root" />
+		<property name="password" value="root" /> 
+
+		<!-- <property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" 
+			/> <property name="url" value="jdbc:sqlserver://localhost\\sqlexpress:7777;databaseName=msquare" 
+			/> <property name="username" value="sa" /> <property name="password" value="system$123"/> -->
+
+		<!-- MSSQL QAS -->
+
+		<!--  <property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+		 <property name="url" value="jdbc:sqlserver://localhost\\sqlexpress2012:49269;databaseName=annual_survey" /> 
+		<property name="username" value="sa" />
+		 <property name="password" value="pass,123"/> --> 
+		 
+		 
+		<!--  <property name="driverClassName" value="net.sourceforge.jtds.jdbc.Driver" />
+      <property name="url" value="jdbc:jtds:sqlserver://lvwmpi36v3.database.windows.net:1433;databaseName=annual_survey" />
+      <property name="username" value="mnmadmin@lvwmpi36v3"/>
+      <property name="password" value="Mahindra@123"/> -->
+		 
+
+
+		<!-- MSSQL Production -->
+		<!-- <property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" 
+			/> <property name="url" value="jdbc:sqlserver://10.20.70.242:21443;databaseName=msquare" 
+			/> <property name="username" value="msquare" /> <property name="password" 
+			value="System$1234"/> -->
+		<!-- <property name="url" value="jdbc:mysql://10.2.152.188:3306/msquare" 
+			/> <property name="username" value="root" /> <property name="password" value="root" 
+			/> -->
+	</bean>
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="appemf" />
+	</bean>
+	<tx:annotation-driven />
+
+	<bean id="persistenceExceptionTranslationPostProcessor"
+		class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />
+
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/admin" />
+			<mvc:mapping path="/login" />
+			<mvc:mapping path="/user" />
+            <bean class="com.mahindra.annualsurvey.filter.AuthenticationInterceptor" />
+        </mvc:interceptor>
+        
+        
+         <mvc:interceptor>
+			<mvc:mapping path="/admin" />
+			<mvc:mapping path="/login" />
+			<mvc:mapping path="/user" />
+			<bean class="com.mahindra.annualsurvey.filter.SessionInterceptor" />
+		</mvc:interceptor> 
+	</mvc:interceptors>
+	
+	   <task:annotation-driven /> 
+	<!--  <bean id="myScheduler" class="com.mahindra.annualsurvey.utils.MailScheduler"/> -->
+	<!-- <bean id="newScheduler" class="com.mahindra.annualsurvey.utils.Schedule"/>
+	
+	<task:scheduled-tasks>
+	<task:scheduled ref="newScheduler" method="scheduleRun" cron="*/5 * * * * *" />
+  </task:scheduled-tasks> -->
+	
+	
+
+	<!-- <mvc:resources mapping="/**" location="/WEB-INF/" />  -->
+
+</beans>
+
+
+	
+	

@@ -1,0 +1,132 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+html {
+    width: 100%;
+    height: auto;
+}
+
+@media(min-width:767px) {
+    .navbar {
+      padding: 5px 0px 0px 0px !important;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+		
+    }
+
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+    height: auto;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+	.Question-section {
+    height: auto;
+    padding-top: 65px !important;
+}
+.Area-section {
+    height: auto;
+    padding-top: 120px !important;
+}
+.Status-section {
+    height: auto;
+    padding-top: 120px !important;
+}
+
+.Home-section {
+    height: auto;
+     padding-top:0px;
+}
+
+.Config-section {
+    height: auto;
+     padding-top:100px;
+}
+.myh1
+{
+	    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700 !important;
+    line-height: 1.1;
+    color: #E51837;
+    font-size: 21px !important;
+    text-align: left;
+    margin: 0px 0px 7px 0px;
+}
+.Area-section {
+    height: auto;
+    padding-top:100px !important;
+}
+.Employee-section {
+    height: auto;
+    padding-top:100px;
+}
+.Question-section {
+    height: auto;
+    padding-top:100px !important;
+}
+.Tracking-section {
+    height: auto;
+    padding-top:100px;
+}
+.Status-section {
+    height: auto;
+	padding-top:100px;
+  }
+   .Survey-section {
+    height: auto;
+    padding-top: 57px;
+  }
+  .StartSurvey-section {
+    height: auto;
+    padding-top:30px;
+  }
+   .Report-section {
+    height: auto;
+    padding-top:120px;
+  }
+  
+  
+/*-----------Neha-----------*/
+
+.instdiv {
+	margin-top: -14px;
+}
+
+#demograpic label {
+    font-size: 12px;
+      position: relative;
+    top: 5px;
+
+}
+
+#demograpic input {
+	        font-size: 13px;
+}
+
+.genradio {
+	position: absolute;
+}
+
+.bttompadng {
+	padding-bottom:10px;
+}

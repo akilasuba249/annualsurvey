@@ -1,0 +1,121 @@
+package com.mahindra.annualsurvey.model;
+
+import java.io.Serializable;
+import java.sql.Timestamp;
+import java.util.Set;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "area_year_mapping", schema = "annual_survey")
+public class AreaYearMapping implements Serializable {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "pk_details_id")
+	private int pkDetailsId;
+/*	@Column(name = "area_code")
+	private String areaCode;*/
+	@Column(name = "year")
+	private String year;
+	@Column(name = "created_by")
+	private String createdBy;
+	@Column(name = "created_datetime")
+	private Timestamp createdDateTime;
+	@Column(name = "modified_by")
+	private String modifiedBy;
+	@Column(name = "modified_datetime")
+	private Timestamp modifiedDateTime;
+	@Column(name = "is_active")
+	private String isActive;
+	
+	
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name="area_code")
+	private MTArea mtAreas;
+
+	public int getPkDetailsId() {
+		return pkDetailsId;
+	}
+
+	public void setPkDetailsId(int pkDetailsId) {
+		this.pkDetailsId = pkDetailsId;
+	}
+
+/*	public String getAreaCode() {
+		return areaCode;
+	}
+
+	public void setAreaCode(String areaCode) {
+		this.areaCode = areaCode;
+	}*/
+
+	public String getYear() {
+		return year;
+	}
+
+	public void setYear(String year) {
+		this.year = year;
+	}
+
+	public String getCreatedBy() {
+		return createdBy;
+	}
+
+	public void setCreatedBy(String createdBy) {
+		this.createdBy = createdBy;
+	}
+
+	public Timestamp getCreatedDateTime() {
+		return createdDateTime;
+	}
+
+	public void setCreatedDateTime(Timestamp createdDateTime) {
+		this.createdDateTime = createdDateTime;
+	}
+
+	public String getModifiedBy() {
+		return modifiedBy;
+	}
+
+	public void setModifiedBy(String modifiedBy) {
+		this.modifiedBy = modifiedBy;
+	}
+
+	public Timestamp getModifiedDateTime() {
+		return modifiedDateTime;
+	}
+
+	public void setModifiedDateTime(Timestamp modifiedDateTime) {
+		this.modifiedDateTime = modifiedDateTime;
+	}
+
+	public String getIsActive() {
+		return isActive;
+	}
+
+	public void setIsActive(String isActive) {
+		this.isActive = isActive;
+	}
+
+	public MTArea getMtAreas() {
+		return mtAreas;
+	}
+
+	public void setMtAreas(MTArea mtAreas) {
+		this.mtAreas = mtAreas;
+	}
+
+	
+	
+
+}
